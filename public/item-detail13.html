@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Item 13 Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Item 13: Lubricant Oil Details</h1>
+    </header>
+    <table id="itemDetails">
+        <thead>
+            <tr>
+                <th>TRANSACTION STAGES</th>
+                <th>PROCEDURE</th>
+                <th>Check point</th>
+                <th>Due Date</th>
+                <th>PIC</th>
+                <th>Attached Document</th>
+                <th>Send To</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>MEMORANDUM OF UNDERSTANDING</td>
+                <td>Document Agreement Preamble</td>
+                <td class="checkpoint" data-step-id="step1" style="background-color: rgb(255, 255, 255);" onclick="toggleCheckpoint(this, 'step1')"></td>
+                <td><input id="dueDate-step1" type="date"></td>
+                <td><input id="pic-step1" type="text" value="AMBANI"></td>
+                <td><input id="pic-step1" type="text" value="AMBANI"></td>
+                <td><input id="pic-step1" type="text" value="AMBANI"></td>
+                <td><button onclick="saveChanges('step1')">Save</button></td>
+            </tr>
+            <tr>
+                <td>MEMORANDUM OF UNDERSTANDING</td>
+                <td>Sourcing Procurement & Supply</td>
+                <td class="checkpoint" data-step-id="step1" style="background-color: rgb(255, 255, 255);" onclick="toggleCheckpoint(this, 'step1')"></td>
+                                <td><input id="dueDate-step1" type="date"></td>
+                <td><input id="pic-step1" type="text" value="AMBANI"></td>
+                <td><input id="pic-step1" type="text" value="AMBANI"></td>
+                <td><input id="pic-step1" type="text" value="AMBANI"></td>
+                <td><button onclick="saveChanges('step1')">Save</button></td>
+            </tr>
+            <tr>
+                <td>EXPRESSION OF INTEREST</td>
+                <td>Release Letter of Interest</td>
+                <td class="checkpoint" data-step-id="step1" style="background-color: rgb(255, 255, 255);" onclick="toggleCheckpoint(this, 'step1')"></td>
+                <td><input id="dueDate-step1" type="date"></td>
+                <td><input id="pic-step1" type="text" value="AMBANI"></td>
+                <td><input id="pic-step1" type="text" value="AMBANI"></td>
+                <td><input id="pic-step1" type="text" value="AMBANI"></td>
+                <td><button onclick="saveChanges('step1')">Save</button></td>
+            </tr>
+            <tr>
+                <td>FULL CORPORATE OFFER</td>
+                <td>Provide Quotation: Quantity, Description, Unit Price, Total Cost</td>
+                <td class="checkpoint" data-step-id="step1" style="background-color: rgb(255, 255, 255);" onclick="toggleCheckpoint(this, 'step1')"></td>
+                <td><input id="dueDate-step1" type="date"></td>
+                <td><input id="pic-step1" type="text" value="AMBANI"></td>
+                <td><input id="pic-step1" type="text" value="AMBANI"></td>
+                <td><input id="pic-step1" type="text" value="AMBANI"></td>
+                <td><button onclick="saveChanges('step1')">Save</button></td>
+            </tr>
+            <tr>
+                <td>FULL CORPORATE OFFER</td>
+                <td>Technical Specification</td>
+                <td class="checkpoint" data-step-id="step1" style="background-color: rgb(255, 255, 255);" onclick="toggleCheckpoint(this, 'step1')"></td>
+                <td><input id="dueDate-step1" type="date"></td>
+                <td><input id="pic-step1" type="text" value="AMBANI"></td>
+                <td><input id="pic-step1" type="text" value="AMBANI"></td>
+                <td><input id="pic-step1" type="text" value="AMBANI"></td>
+                <td><button onclick="saveChanges('step1')">Save</button></td>
+            </tr>
+            <tr>
+                <td>MAKE PAYMENT</td>
+                <td>Buyer send LOI</td>
+                <td class="checkpoint" data-step-id="step1" style="background-color: red;" onclick="toggleCheckpoint(this, 'step1')"></td>
+                <td><input id="dueDate-step1" type="date"></td>
+                <td><input id="pic-step1" type="text" value="AMBANI"></td>
+                <td><input id="pic-step1" type="text" value="AMBANI"></td>
+                <td><input id="pic-step1" type="text" value="AMBANI"></td>
+                <td><button onclick="saveChanges('step1')">Save</button></td>
+            </tr>
+        
+            <tr>
+                <td>Make Payment</td>
+                <td>Buyer accept and sign FCOs</td>
+                <td class="checkpoint" data-step-id="step2" style="background-color: red;" onclick="toggleCheckpoint(this, 'step2')"></td>
+                <td><input id="dueDate-step2" type="date"></td>
+                <td><input id="pic-step2" type="text" value="AMBANI"></td>
+                <td><input id="pic-step2" type="text" value="AMBANI"></td>
+                <td><input id="pic-step2" type="text" value="AMBANI"></td>
+                <td><button onclick="saveChanges('step2')">Save</button></td>
+            </tr>
+            <tr>
+                <td>Make Payment</td>
+                <td>Buyer sends FCO and ICPO to seller</td>
+                <td class="checkpoint" data-step-id="step3" style="background-color: red;" onclick="toggleCheckpoint(this, 'step3')"></td>
+                <td><input id="dueDate-step3" type="date"></td>
+                <td><input id="pic-step3" type="text" value="AMBANI"></td>
+                <td><input id="pic-step3" type="text" value="AMBANI"></td>
+                <td><input id="pic-step3" type="text" value="AMBANI"></td>
+                <td><button onclick="saveChanges('step3')">Save</button></td>
+            </tr>
+            <tr>
+                <td>Make Payment</td>
+                <td>Seller send the draft sales and purchase agreement [SPA]</td>
+                <td class="checkpoint" data-step-id="step4" style="background-color: red;" onclick="toggleCheckpoint(this, 'step4')"></td>
+                <td><input id="dueDate-step4" type="date"></td>
+                <td><input id="pic-step4" type="text" value="AMBANI"></td>
+                <td><input id="pic-step4" type="text" value="AMBANI"></td>
+                <td><input id="pic-step4" type="text" value="AMBANI"></td>
+                <td><button onclick="saveChanges('step4')">Save</button></td>
+            </tr>
+            <tr>
+                <td>Make Payment</td>
+                <td>Buyer send the [SPA] and return to seller</td>
+                <td class="checkpoint" data-step-id="step5" style="background-color: red;" onclick="toggleCheckpoint(this, 'step5')"></td>
+                <td><input id="dueDate-step5" type="date"></td>
+                <td><input id="pic-step5" type="text" value="AMBANI"></td>
+                <td><input id="pic-step5" type="text" value="AMBANI"></td>
+                <td><input id="pic-step5" type="text" value="AMBANI"></td>
+                <td><button onclick="saveChanges('step5')">Save</button></td>
+            </tr>
+            <tr>
+                <td>Make Payment</td>
+                <td>Seller sign the [SAP] and returned it accompanied by the performa invoice</td>
+                <td class="checkpoint" data-step-id="step6" style="background-color: red;" onclick="toggleCheckpoint(this, 'step6')"></td>
+                <td><input id="dueDate-step6" type="date"></td>
+                <td><input id="pic-step6" type="text" value="AMBANI"></td>
+                <td><input id="pic-step6" type="text" value="AMBANI"></td>
+                <td><input id="pic-step6" type="text" value="AMBANI"></td>
+                <td><button onclick="saveChanges('step6')">Save</button></td>
+            </tr>
+            <tr>
+                <td>Make Payment</td>
+                <td>Buyer return and sign the performa invoice</td>
+                <td class="checkpoint" data-step-id="step7" style="background-color: red;" onclick="toggleCheckpoint(this, 'step7')"></td>
+                <td><input id="dueDate-step7" type="date"></td>
+                <td><input id="pic-step7" type="text" value="AMBANI"></td>
+                <td><input id="pic-step7" type="text" value="AMBANI"></td>
+                <td><input id="pic-step7" type="text" value="AMBANI"></td>
+                <td><button onclick="saveChanges('step7')">Save</button></td>
+            </tr>
+            <tr>
+                <td>Make Payment</td>
+                <td>Buyer issue 50% deposit via Wire Transfer</td>
+                <td class="checkpoint" data-step-id="step8" style="background-color: red;" onclick="toggleCheckpoint(this, 'step8')"></td>
+                <td><input id="dueDate-step8" type="date"></td>
+                <td><input id="pic-step8" type="text" value="AMBANI"></td>
+                <td><input id="pic-step8" type="text" value="AMBANI"></td>
+                <td><input id="pic-step8" type="text" value="AMBANI"></td>
+                <td><button onclick="saveChanges('step8')">Save</button></td>
+            </tr>
+            <tr>
+                <td>Make Payment</td>
+                <td>Seller prepare the production for buyer</td>
+                <td class="checkpoint" data-step-id="step9" style="background-color: red;" onclick="toggleCheckpoint(this, 'step9')"></td>
+                <td><input id="dueDate-step9" type="date"></td>
+                <td><input id="pic-step9" type="text" value="AMBANI"></td>
+                <td><input id="pic-step9" type="text" value="AMBANI"></td>
+                <td><input id="pic-step9" type="text" value="AMBANI"></td>
+                <td><button onclick="saveChanges('step9')">Save</button></td>
+            </tr>
+            <tr>
+                <td>Make Payment</td>
+                <td>Seller inform buyer that the goods are ready for shipment</td>
+                <td class="checkpoint" data-step-id="step10" style="background-color: red;" onclick="toggleCheckpoint(this, 'step10')"></td>
+                <td><input id="dueDate-step10" type="date"></td>
+                <td><input id="pic-step10" type="text" value="AMBANI"></td>
+                <td><input id="pic-step10" type="text" value="AMBANI"></td>
+                <td><input id="pic-step10" type="text" value="AMBANI"></td>
+                <td><button onclick="saveChanges('step10')">Save</button></td>
+            </tr>
+            <tr>
+                <td>Make Payment</td>
+                <td>Buyer appointed 3rd party inspector and test the product [Buyer Cost]</td>
+                <td class="checkpoint" data-step-id="step11" style="background-color: red;" onclick="toggleCheckpoint(this, 'step11')"></td>
+                <td><input id="dueDate-step11" type="date"></td>
+                <td><input id="pic-step11" type="text" value="AMBANI"></td>
+                <td><input id="pic-step11" type="text" value="AMBANI"></td>
+                <td><input id="pic-step11" type="text" value="AMBANI"></td>
+                <td><button onclick="saveChanges('step11')">Save</button></td>
+            </tr>
+            <tr>
+                <td>Make Payment</td>
+                <td>Seller prepare shipping documents</td>
+                <td class="checkpoint" data-step-id="step12" style="background-color: red;" onclick="toggleCheckpoint(this, 'step12')"></td>
+                <td><input id="dueDate-step12" type="date"></td>
+                <td><input id="pic-step12" type="text" value="AMBANI"></td>
+                <td><input id="pic-step12" type="text" value="AMBANI"></td>
+                <td><input id="pic-step12" type="text" value="AMBANI"></td>
+                <td><button onclick="saveChanges('step12')">Save</button></td>
+            </tr>
+            <tr>
+                <td>Make Payment</td>
+                <td>Buyer release or pay the balance payment via Wire transfer</td>
+                <td class="checkpoint" data-step-id="step13" style="background-color: red;" onclick="toggleCheckpoint(this, 'step13')"></td>
+                <td><input id="dueDate-step13" type="date"></td>
+                <td><input id="pic-step13" type="text" value="AMBANI"></td>
+                <td><input id="pic-step13" type="text" value="AMBANI"></td>
+                <td><input id="pic-step13" type="text" value="AMBANI"></td>
+                <td><button onclick="saveChanges('step13')">Save</button></td>
+            </tr>
+            <tr>
+                <td>Make Payment</td>
+                <td>Seller load te goods into the seller assign shipping container</td>
+                <td class="checkpoint" data-step-id="step14" style="background-color: red;" onclick="toggleCheckpoint(this, 'step14')"></td>
+                <td><input id="dueDate-step14" type="date"></td>
+                <td><input id="pic-step14" type="text" value="AMBANI"></td>
+                <td><input id="pic-step14" type="text" value="AMBANI"></td>
+                <td><input id="pic-step14" type="text" value="AMBANI"></td>
+                <td><button onclick="saveChanges('step14')">Save</button></td>
+            </tr>
+            <tr>
+                <td>Make Payment</td>
+                <td>Seller coordinate with buyer nominated shiping agent to pull the container to the port</td>
+                <td class="checkpoint" data-step-id="step15" style="background-color: red;" onclick="toggleCheckpoint(this, 'step15')"></td>
+                <td><input id="dueDate-step15" type="date"></td>
+                <td><input id="pic-step15" type="text" value="AMBANI"></td>
+                <td><input id="pic-step15" type="text" value="AMBANI"></td>
+                <td><input id="pic-step15" type="text" value="AMBANI"></td>
+                <td><button onclick="saveChanges('step15')">Save</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="item-detail-script.js"></script>
+</body>
+</html>

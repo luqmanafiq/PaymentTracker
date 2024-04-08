@@ -1,0 +1,77 @@
+{
+  "step1": {
+    "isComplete": false,
+    "dueDate": "",
+    "pic": "AMBANI"
+  },
+  "step2": {
+    "isComplete": false,
+    "dueDate": "2024-04-07",
+    "pic": "pic2.jpg"
+  },
+  "step3": {
+    "isComplete": true,
+    "dueDate": "2024-04-08",
+    "pic": "pic3.jpg"
+  },
+  "step4": {
+    "isComplete": true,
+    "dueDate": "2024-04-06",
+    "pic": "pic1.jpg"
+  },
+  "step5": {
+    "isComplete": false,
+    "dueDate": "2024-04-07",
+    "pic": "pic2.jpg"
+  },
+  "step6": {
+    "isComplete": true,
+    "dueDate": "2024-04-08",
+    "pic": "pic3.jpg"
+  },
+  "step7": {
+    "isComplete": true,
+    "dueDate": "2024-04-06",
+    "pic": "pic1.jpg"
+  },
+  "step8": {
+    "isComplete": false,
+    "dueDate": "2024-04-07",
+    "pic": "pic2.jpg"
+  },
+  "step9": {
+    "isComplete": true,
+    "dueDate": "2024-04-08",
+    "pic": "pic3.jpg"
+  },
+  "step10": {
+    "isComplete": true,
+    "dueDate": "2024-04-06",
+    "pic": "pic1.jpg"
+  },
+  "step11": {
+    "isComplete": false,
+    "dueDate": "2024-04-07",
+    "pic": "pic2.jpg"
+  },
+  "step12": {
+    "isComplete": true,
+    "dueDate": "2024-04-08",
+    "pic": "pic3.jpg"
+  },
+  "step13": {
+    "isComplete": true,
+    "dueDate": "2024-04-06",
+    "pic": "pic1.jpg"
+  },
+  "step14": {
+    "isComplete": false,
+    "dueDate": "2024-04-07",
+    "pic": "pic2.jpg"
+  },
+  "step15": {
+    "isComplete": true,
+    "dueDate": "2024-04-08",
+    "pic": "pic3.jpg"
+  }
+}
