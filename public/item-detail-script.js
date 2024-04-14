@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const checkpoints = document.querySelectorAll('.checkpoint');
     checkpoints.forEach((checkpoint) => {
         const stepId = checkpoint.dataset.stepId;
-        fetch(`/api/get-checkpoint-state?stepId=${stepId}`)
+        fetch(`/api/get-checkpoint?stepId=${stepId}`) // Changed from /api/get-checkpoint-state to /api/get-checkpoint
             .then(response => response.json())
             .then(data => {
                 checkpoint.style.backgroundColor = data.isComplete ? 'green' : 'red';
@@ -52,7 +52,12 @@ function saveChanges(stepId) {
                 isComplete: isComplete,
             }),
         })
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
         .then(data => {
             console.log('Checkpoint updated:', data);
             updateProgress(); // Update the progress bar if needed
