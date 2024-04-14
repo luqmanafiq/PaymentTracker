@@ -1,0 +1,77 @@
+{
+  "step2": {
+    "isComplete": false,
+    "dueDate": "",
+    "pic": "AMBANI"
+  },
+  "step4": {
+    "isComplete": false,
+    "dueDate": "",
+    "pic": "AMBANI"
+  },
+  "step3": {
+    "isComplete": false,
+    "dueDate": "",
+    "pic": "AMBANI"
+  },
+  "step15": {
+    "isComplete": true,
+    "dueDate": "",
+    "pic": "AMBANI"
+  },
+  "step13": {
+    "isComplete": true,
+    "dueDate": "",
+    "pic": "AMBANI"
+  },
+  "step12": {
+    "isComplete": false,
+    "dueDate": "",
+    "pic": "AMBANI"
+  },
+  "step11": {
+    "isComplete": false,
+    "dueDate": "",
+    "pic": "AMBANI"
+  },
+  "step10": {
+    "isComplete": false,
+    "dueDate": "",
+    "pic": "AMBANI"
+  },
+  "step9": {
+    "isComplete": true,
+    "dueDate": "",
+    "pic": "AMBANI"
+  },
+  "step8": {
+    "isComplete": false,
+    "dueDate": "",
+    "pic": "AMBANI"
+  },
+  "step6": {
+    "isComplete": true,
+    "dueDate": "",
+    "pic": "AMBANI"
+  },
+  "step5": {
+    "isComplete": true,
+    "dueDate": "",
+    "pic": "AMBANI"
+  },
+  "step7": {
+    "isComplete": true,
+    "dueDate": "",
+    "pic": "AMBANI"
+  },
+  "step14": {
+    "isComplete": true,
+    "dueDate": "",
+    "pic": "AMBANI"
+  },
+  "step1": {
+    "isComplete": false,
+    "dueDate": "",
+    "pic": "{{step1.pic}}"
+  }
+}

@@ -3,43 +3,37 @@ const app = express();
 const PORT = 3000;
 const fs = require('fs');
 
-// Helper function to read the database
-function readDatabase() {
+function readDatabase(itemDetailId) {
     try {
-        const data = fs.readFileSync('./checkpointsDatabase.json', 'utf8');
+        const data = fs.readFileSync(`./checkpointsDatabase${itemDetailId}.json`, 'utf8');
         return JSON.parse(data);
     } catch (err) {
         if (err.code === 'ENOENT') {
-            // File does not exist or is empty, return an empty object
-            return {};
+            return {}; // Return empty object if file does not exist
         } else {
-            // Handle other errors
             throw err;
         }
     }
 }
 
-
-// Helper function to write to the database
-function writeDatabase(database) {
-    fs.writeFileSync('./checkpointsDatabase.json', JSON.stringify(database, null, 2), 'utf8');
+function writeDatabase(itemDetailId, database) {
+    fs.writeFileSync(`./checkpointsDatabase${itemDetailId}.json`, JSON.stringify(database, null, 2), 'utf8');
 }
 
 app.use(express.json());
 app.use(express.static('public'));
 
 app.post('/api/update-checkpoint', (req, res) => {
-    const { stepId, isComplete, dueDate, pic } = req.body;
-    const database = readDatabase();
-    // Update the database with the new state
+    const { itemDetailId, stepId, isComplete, dueDate, pic } = req.body;
+    const database = readDatabase(itemDetailId);
     database[stepId] = { isComplete, dueDate, pic };
-    writeDatabase(database);
+    writeDatabase(itemDetailId, database);
     res.json({ message: 'Checkpoint state updated successfully.' });
 });
 
 app.get('/api/get-checkpoint', (req, res) => {
-    const { stepId } = req.query;
-    const database = readDatabase();
+    const { itemDetailId, stepId } = req.query;
+    const database = readDatabase(itemDetailId);
     const checkpointState = database[stepId] || { isComplete: false };
     res.json(checkpointState);
 });
